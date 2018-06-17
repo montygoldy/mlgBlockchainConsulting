@@ -1,9 +1,101 @@
-footer {
-  height: 50px;
+.footer {
+  padding: 2rem 0;
+  background-color: $color-black-light;
   color: $color-white;
-  width: 100%;
-  font-weight: 300;
-  font-family: $secondary-font;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
+  &__subscription {
+    margin: 2rem 0 6rem 0;
+    flex-direction: column;
+    hgroup {
+      margin-bottom: 2rem;
+      h3 {
+        color: $color-white;
+        margin-bottom: .6rem;
+      }
+      h5 {
+        color: $text-color-dark;
+        font-family: $secondary-font;
+        font-weight: 300;
+        width: 67%;
+        margin: auto;
+      }
+    }
+    .newsletter {
+      width: 40%;
+      span {
+        font-family: $primary-font;
+        letter-spacing: 1px;
+        button {
+          background: $primary-color;
+          &:hover {
+            background: $primary-color-light;
+          }
+        }
+      }
+    }
+  }
+  &__navGroup {
+    .contact-section {
+      width: 100%;
+      img {
+        width: 14rem;
+        margin-bottom: 1rem;
+      }
+      h5 {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: $color-white;
+        font-weight: 300 !important;
+        margin-bottom: 2rem;
+      }
+      a {
+        color: $text-color-dark;
+        i {
+          font-size: 2.5rem;
+        }
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+    .addressGroup {
+      color: $text-color-dark;
+      font-size: 1.3rem;
+      font-weight: 300;
+      .address {
+        margin-bottom: 1rem;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+    .linksGroup {
+      h4 {
+        color: $color-white;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      ul {
+        background: none !important;
+        border: none !important;
+        color: $text-color-dark;
+        margin: 2rem 0 3rem 0;
+        font-weight: 300 !important;
+        li {
+          padding: 0;
+          line-height: 1.4;
+          height: auto;
+          i {
+            font-size: 1.1rem;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  &__copyright {
+    color: $text-color-dark;
+    padding-top: 2rem;
+    border-top: 1px solid rgba($color-white, .1);
+  }
 }

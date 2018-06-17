@@ -1,3 +1,4 @@
+@import url(~antd/dist/antd.css);
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -149,8 +150,7 @@ body {
   box-sizing: border-box;
   font-size: 1.4rem;
   color: #475C8A;
-  line-height: 1.3;
-  background: #FBFBFB; }
+  line-height: 1.3; }
 
 h1,
 h2,
@@ -159,7 +159,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: "Fjalla One", sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 h1 {
   font-size: 5rem; }
@@ -212,13 +212,265 @@ textarea:active {
 .text-center {
   text-align: center; }
 
-footer {
-  height: 50px;
-  color: #fff;
+.header {
+  height: 7rem;
+  box-shadow: 0 4px 26px -2px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
   width: 100%;
-  font-weight: 300;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-  font-size: 1.2rem; }
+  background: #fff;
+  z-index: 10; }
+  .header__logo {
+    height: 7rem; }
+    .header__logo img {
+      width: 115px; }
+  .header__nav {
+    height: 7rem; }
+    .header__nav ul {
+      background: none;
+      border: none; }
+      .header__nav ul li {
+        font-family: "Oswald", sans-serif !important;
+        font-size: 1.6rem;
+        text-transform: uppercase; }
+      .header__nav ul .submenu-heading span {
+        margin-right: .5rem; }
+      .header__nav ul .submenu-heading i {
+        font-size: 1.1rem;
+        margin-top: -3px; }
+  .header__button {
+    height: 7rem; }
+
+.footer {
+  padding: 2rem 0;
+  background-color: #212529;
+  color: #fff; }
+  .footer__subscription {
+    margin: 2rem 0 6rem 0;
+    flex-direction: column; }
+    .footer__subscription hgroup {
+      margin-bottom: 2rem; }
+      .footer__subscription hgroup h3 {
+        color: #fff;
+        margin-bottom: .6rem; }
+      .footer__subscription hgroup h5 {
+        color: #475C8A;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        width: 67%;
+        margin: auto; }
+    .footer__subscription .newsletter {
+      width: 40%; }
+      .footer__subscription .newsletter span {
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px; }
+        .footer__subscription .newsletter span button {
+          background: #39ACFC; }
+          .footer__subscription .newsletter span button:hover {
+            background: #39CFFD; }
+  .footer__navGroup .contact-section {
+    width: 100%; }
+    .footer__navGroup .contact-section img {
+      width: 14rem;
+      margin-bottom: 1rem; }
+    .footer__navGroup .contact-section h5 {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 300 !important;
+      margin-bottom: 2rem; }
+    .footer__navGroup .contact-section a {
+      color: #475C8A; }
+      .footer__navGroup .contact-section a i {
+        font-size: 2.5rem; }
+      .footer__navGroup .contact-section a:hover {
+        color: #fff; }
+  .footer__navGroup .addressGroup {
+    color: #475C8A;
+    font-size: 1.3rem;
+    font-weight: 300; }
+    .footer__navGroup .addressGroup .address {
+      margin-bottom: 1rem; }
+      .footer__navGroup .addressGroup .address i {
+        margin-right: 5px; }
+  .footer__navGroup .linksGroup h4 {
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .footer__navGroup .linksGroup ul {
+    background: none !important;
+    border: none !important;
+    color: #475C8A;
+    margin: 2rem 0 3rem 0;
+    font-weight: 300 !important; }
+    .footer__navGroup .linksGroup ul li {
+      padding: 0;
+      line-height: 1.4;
+      height: auto; }
+      .footer__navGroup .linksGroup ul li i {
+        font-size: 1.1rem;
+        margin-right: 0; }
+  .footer__copyright {
+    color: #475C8A;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+.button,
+a.button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  border: 3px solid #fff;
+  padding: 6px 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all, .3s;
+  border-radius: 3px; }
+  .button:hover,
+  a.button:hover {
+    background: #fff;
+    color: #475C8A;
+    border-bottom: 3px solid #fff; }
+
+.button--white,
+a.button--white {
+  font-size: 1.6rem !important;
+  text-transform: uppercase;
+  background: #fff !important;
+  color: #475C8A !important;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
+  .button--white:hover,
+  a.button--white:hover {
+    background: #475C8A !important;
+    color: #fff !important;
+    border-color: #475C8A !important; }
+
+.button--dark,
+a.button--dark {
+  background: #39ACFC !important;
+  font-size: 1.8rem;
+  border: none; }
+  .button--dark:hover,
+  a.button--dark:hover {
+    box-shadow: 0 2px 6px rgba(57, 207, 253, 0.7);
+    border: none; }
+
+.slider__image {
+  width: 60%;
+  min-width: 12rem; }
+  .slider__image img {
+    width: 100%;
+    height: auto; }
+
+main .jumbrotron {
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important; }
+  main .jumbrotron .content {
+    height: 90vh;
+    flex-direction: column; }
+    main .jumbrotron .content h1 {
+      color: #39ACFC;
+      font-size: 6rem; }
+    main .jumbrotron .content .sub-heading {
+      font-size: 2.2rem;
+      margin-top: 0.5rem;
+      color: #fff;
+      margin-bottom: 4rem; }
+    main .jumbrotron .content button {
+      font-size: 3rem;
+      text-transform: uppercase;
+      height: auto !important;
+      border: 4px solid #fff;
+      padding: 8px 3rem; }
+      main .jumbrotron .content button:hover {
+        color: #39ACFC; }
+main .partners,
+main .clients,
+main .about,
+main .tutorials,
+main .services {
+  padding: 6rem 4rem; }
+  main .partners .heading-group,
+  main .clients .heading-group,
+  main .about .heading-group,
+  main .tutorials .heading-group,
+  main .services .heading-group {
+    margin-bottom: 3rem; }
+    main .partners .heading-group h3,
+    main .clients .heading-group h3,
+    main .about .heading-group h3,
+    main .tutorials .heading-group h3,
+    main .services .heading-group h3 {
+      font-weight: 300;
+      font-size: 3.5rem;
+      color: #39ACFC;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase; }
+      main .partners .heading-group h3 span,
+      main .clients .heading-group h3 span,
+      main .about .heading-group h3 span,
+      main .tutorials .heading-group h3 span,
+      main .services .heading-group h3 span {
+        font-weight: 300;
+        color: #212529 !important; }
+  main .partners .sub-heading,
+  main .clients .sub-heading,
+  main .about .sub-heading,
+  main .tutorials .sub-heading,
+  main .services .sub-heading {
+    font-size: 1.8rem; }
+  main .partners p,
+  main .clients p,
+  main .about p,
+  main .tutorials p,
+  main .services p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.7; }
+main .services,
+main .tutorials {
+  background: #FBFBFB; }
+main .about .image {
+  width: 85%; }
+  main .about .image img {
+    width: 100%;
+    height: 100%; }
+main .services .row {
+  margin-bottom: 2rem; }
+  main .services .row .ant-card {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); }
+  main .services .row .services-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem; }
+    main .services .row .services-title i {
+      margin-right: 1rem;
+      color: #39ACFC; }
+  main .services .row ul li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: #475C8A; }
+    main .services .row ul li:not(:last-child) {
+      margin-bottom: 1em; }
+    main .services .row ul li i {
+      margin-right: 1rem;
+      color: #39ACFC; }
+main .tutorials .ant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45rem; }
+  main .tutorials .ant-card .ant-card-cover {
+    width: 15rem;
+    margin-top: 2rem; }
+  main .tutorials .ant-card .ant-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    main .tutorials .ant-card .ant-card-body button {
+      margin-top: auto; }
 
 /*# sourceMappingURL=main.css.map */

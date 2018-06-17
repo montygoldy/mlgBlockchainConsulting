@@ -1,0 +1,124 @@
+main {
+  .jumbrotron {
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    .content {
+      height: 90vh;
+      flex-direction: column;
+      h1 {
+        color: $primary-color;
+        font-size: 6rem;
+      }
+      .sub-heading {
+        font-size: 2.2rem;
+        margin-top: 0.5rem;
+        color: $color-white;
+        margin-bottom: 4rem;
+      }
+      button {
+        font-size: 3rem;
+        text-transform: uppercase;
+        height: auto !important;
+        border: 4px solid #fff;
+        padding: 8px 3rem;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .partners,
+  .clients,
+  .about,
+  .tutorials,
+  .services {
+    padding: 6rem 4rem;
+    .heading-group {
+      margin-bottom: 3rem;
+      h3 {
+        span {
+          font-weight: 300;
+          color: $color-black-light !important;
+        }
+        font-weight: 300;
+        font-size: 3.5rem;
+        color: $primary-color;
+        font-family: $primary-font;
+        text-transform: uppercase;
+      }
+    }
+    .sub-heading {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+  }
+  .services,
+  .tutorials {
+    background: $bg-color;
+  }
+  .about {
+    .image {
+      width: 85%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .services {
+    .row {
+      margin-bottom: 2rem;
+      .ant-card {
+        box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+      }
+      .services-title {
+        font-family: $primary-font;
+        font-size: 2rem;
+        i {
+          margin-right: 1rem;
+          color: $primary-color;
+        }
+      }
+      ul {
+        li {
+          font-family: $secondary-font;
+          font-size: 1.5rem;
+          color: $text-color-dark;
+          &:not(:last-child) {
+            margin-bottom: 1em;
+          }
+          i {
+            margin-right: 1rem;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .tutorials {
+    .ant-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 45rem;
+      .ant-card-cover {
+        width: 15rem;
+        margin-top: 2rem;
+      }
+      .ant-card-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        button {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+}
