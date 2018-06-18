@@ -17,7 +17,7 @@ const Tutorials = () => {
       </div>
       <div className="container">
         <Row gutter={16} className="row">
-          <Col span={8}>
+          <Col md={{ span: 12 }} lg={{ span: 8 }}>
             <Card cover={<img alt="tut 1" src={Tutorial1} />} bordered={false}>
               <h4>
                 Use Go-Ethereum to Setup your Own Private Ethereum Blockchain
@@ -36,7 +36,7 @@ const Tutorials = () => {
               </Button>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col md={{ span: 12 }} lg={{ span: 8 }}>
             <Card cover={<img alt="tut 1" src={Tutorial2} />} bordered={false}>
               <h4>
                 Use Ethereumjs-tx and Web3 to Send an Ether Transaction using
@@ -56,7 +56,7 @@ const Tutorials = () => {
               </Button>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col md={{ span: 12 }} lg={{ span: 8 }}>
             <Card cover={<img alt="tut 1" src={Tutorial1} />} bordered={false}>
               <h4>
                 Use Go-Ethereum to Setup your Own Private Ethereum Blockchain

@@ -6,12 +6,12 @@ const About = () => {
     <section className="about">
       <div className="container">
         <Row>
-          <Col span={10}>
+          <Col sm={{ span: 24 }} md={{ span: 10 }}>
             <div className="image">
               <img src={AboutUs} alt="" />
             </div>
           </Col>
-          <Col span={14}>
+          <Col sm={{ span: 24 }} md={{ span: 14 }}>
             <div className="heading-group text-center">
               <h3>
                 <span>About</span> Us

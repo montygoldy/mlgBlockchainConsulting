@@ -6,11 +6,19 @@ const NavGroup = () => {
   return (
     <React.Fragment>
       <Row>
-        <Col span={6}>
+        <Col
+          xs={{ span: 16, offset: 4 }}
+          md={{ span: 12, offset: 0 }}
+          lg={{ span: 6, offset: 0 }}
+        >
           <FooterInfo />
         </Col>
         <div className="linksGroup">
-          <Col span={6}>
+          <Col
+            xs={{ span: 16, offset: 4 }}
+            md={{ span: 12, offset: 0 }}
+            lg={{ span: 6, offset: 0 }}
+          >
             <h4>Useful Information</h4>
             <Menu mode="vertical">
               <Menu.Item>
@@ -24,7 +32,11 @@ const NavGroup = () => {
               </Menu.Item>
             </Menu>
           </Col>
-          <Col span={6}>
+          <Col
+            xs={{ span: 16, offset: 4 }}
+            md={{ span: 12, offset: 0 }}
+            lg={{ span: 6, offset: 0 }}
+          >
             <h4>MLG Blockchain</h4>
             <Menu mode="vertical">
               <Menu.Item>
@@ -44,7 +56,11 @@ const NavGroup = () => {
               </Menu.Item>
             </Menu>
           </Col>
-          <Col span={6}>
+          <Col
+            xs={{ span: 16, offset: 4 }}
+            md={{ span: 12, offset: 0 }}
+            lg={{ span: 6, offset: 0 }}
+          >
             <h4>Blockchain Research</h4>
             <Menu mode="vertical">
               <Menu.Item>

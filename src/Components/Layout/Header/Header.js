@@ -7,17 +7,17 @@ const Header = () => {
   return (
     <header className="header">
       <Row>
-        <Col span={4}>
+        <Col span={3} offset={1}>
           <div className="header__logo flexCenter">
             <img src={Logo} alt="Logo" />
           </div>
         </Col>
-        <Col span={16}>
-          <div className="flexCenter header__nav">
+        <Col md={{ span: 20 }} lg={{ span: 16 }}>
+          <div className="header__nav">
             <Navigation />
           </div>
         </Col>
-        <Col span={4}>
+        <Col md={{ span: 0 }} lg={{ span: 4 }}>
           <div className="flexCenter header__button">
             <Button
               type="primary"

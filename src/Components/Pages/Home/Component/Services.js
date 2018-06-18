@@ -14,7 +14,7 @@ const Services = () => {
       </div>
       <div className="container">
         <Row gutter={16} className="row">
-          <Col span={8}>
+          <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
             <Card
               title={
                 <span className="services-title">
@@ -40,7 +40,7 @@ const Services = () => {
               </ul>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
             <Card
               title={
                 <span className="services-title">
@@ -66,7 +66,7 @@ const Services = () => {
               </ul>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
             <Card
               title={
                 <span className="services-title">
@@ -92,9 +92,8 @@ const Services = () => {
               </ul>
             </Card>
           </Col>
-        </Row>
-        <Row gutter={16} className="row">
-          <Col span={8}>
+
+          <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
             <Card
               title={
                 <span className="services-title">
@@ -120,7 +119,7 @@ const Services = () => {
               </ul>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
             <Card
               title={
                 <span className="services-title">
@@ -148,7 +147,7 @@ const Services = () => {
               </ul>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
             <Card
               title={
                 <span className="services-title">

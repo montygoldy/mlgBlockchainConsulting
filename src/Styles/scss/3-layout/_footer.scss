@@ -21,6 +21,12 @@
     }
     .newsletter {
       width: 40%;
+      @include respond(tab-port) {
+        width: 80%;
+      }
+      @include respond(xSmall) {
+        width: 100%;
+      }
       span {
         font-family: $primary-font;
         letter-spacing: 1px;
@@ -36,6 +42,7 @@
   &__navGroup {
     .contact-section {
       width: 100%;
+      margin-bottom: 4rem;
       img {
         width: 14rem;
         margin-bottom: 1rem;

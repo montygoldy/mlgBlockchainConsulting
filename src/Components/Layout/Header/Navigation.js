@@ -1,75 +1,51 @@
 import React from "react";
-import { Menu, Icon } from "antd";
-const { SubMenu } = Menu;
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+
 const Navigation = () => {
   return (
-    <Menu mode="horizontal" className="header__nav flexCenter">
-      <Menu.Item>Home</Menu.Item>
-      <SubMenu
-        key="sub1"
-        title={
-          <span className="submenu-heading flexCenter">
-            <span>About</span> <Icon type="caret-down" />
-          </span>
-        }
-      >
-        <Menu.Item key="about-1">Who We Are</Menu.Item>
-        <Menu.Item key="about-2">Leadership</Menu.Item>
-        <Menu.Item key="about-3">Advisors</Menu.Item>
-        <Menu.Item key="about-4">Ambassadors</Menu.Item>
-      </SubMenu>
-      <Menu.SubMenu
-        key="sub2"
-        title={
-          <span className="submenu-heading flexCenter">
-            <span>Services</span> <Icon type="caret-down" />
-          </span>
-        }
-      >
-        <Menu.Item key="services-1">Services</Menu.Item>
-        <Menu.Item key="services-2">Enterprise</Menu.Item>
-      </Menu.SubMenu>
-      <Menu.Item>Clients</Menu.Item>
-      <Menu.SubMenu
-        key="sub3"
-        title={
-          <span className="submenu-heading flexCenter">
-            <span>News</span> <Icon type="caret-down" />
-          </span>
-        }
-      >
-        <Menu.Item key="news-1">Press</Menu.Item>
-        <Menu.Item key="news-2">Announcements</Menu.Item>
-      </Menu.SubMenu>
-      <Menu.SubMenu
-        key="sub4"
-        title={
-          <span className="submenu-heading flexCenter">
-            <span>Learn</span> <Icon type="caret-down" />
-          </span>
-        }
-      >
-        <Menu.Item key="learn-1">Bitcoin Tutorials</Menu.Item>
-        <Menu.Item key="learn-2">Ethereum Tutorials</Menu.Item>
-        <Menu.Item key="learn-3">Icos Tutorials</Menu.Item>
-        <Menu.Item key="learn-4">Hyperledger Tutorials</Menu.Item>
-        <Menu.Item key="learn-5">Eris Tutorials</Menu.Item>
-        <Menu.Item key="learn-6">Other Tutorials</Menu.Item>
-        <Menu.Item key="learn-7">Blockchain Use Cases</Menu.Item>
-        <Menu.Item key="learn-8">Whitepaper Reviews</Menu.Item>
-      </Menu.SubMenu>
-      <Menu.SubMenu
-        key="sub5"
-        title={
-          <span className="submenu-heading flexCenter">
-            <span>Analysis</span> <Icon type="caret-down" />
-          </span>
-        }
-      >
-        <Menu.Item key="analysis-1">Industry Analysis</Menu.Item>
-        <Menu.Item key="analysis-2">Token Profiles</Menu.Item>
-      </Menu.SubMenu>
-    </Menu>
+    <Navbar className="navbar-trans" collapseOnSelect>
+      <Navbar.Header>
+        <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+        <Nav>
+          <NavItem eventKey={1} href="#">
+            Home
+          </NavItem>
+          <NavDropdown eventKey={2} title="About" id="basic-nav-dropdown">
+            <MenuItem eventKey={2.1}>Who We Are</MenuItem>
+            <MenuItem eventKey={2.2}>Leadership</MenuItem>
+            <MenuItem eventKey={2.3}>Advisors</MenuItem>
+            <MenuItem eventKey={2.4}>Ambassadors</MenuItem>
+          </NavDropdown>
+          <NavDropdown eventKey={3} title="Services" id="basic-nav-dropdown">
+            <MenuItem eventKey={3.1}>Enterprise</MenuItem>
+            <MenuItem eventkey={3.2}>Advisors</MenuItem>
+          </NavDropdown>
+          <NavItem eventKey={4} href="#">
+            Clients
+          </NavItem>
+          <NavDropdown eventKey={5} title="News" id="basic-nav-dropdown">
+            <MenuItem eventKey={5.1}>Press</MenuItem>
+            <MenuItem eventKey={5.2}>Announcements</MenuItem>
+          </NavDropdown>
+          <NavDropdown eventKey={6} title="Learn" id="basic-nav-dropdown">
+            <MenuItem eventKey={6.1}>Bitcoin Tutorials</MenuItem>
+            <MenuItem eventKey={6.2}>Ethereum Tutorials</MenuItem>
+            <MenuItem eventKey={6.3}>Icos Tutorials</MenuItem>
+            <MenuItem eventKey={6.4}>Hyperledger Tutorials</MenuItem>
+            <MenuItem eventKey={6.5}>Eris Tutorials</MenuItem>
+            <MenuItem eventKey={6.6}>Other Tutorials</MenuItem>
+            <MenuItem eventKey={6.7}>Blockchain Use Cases</MenuItem>
+            <MenuItem eventKey={6.8}>Whitepaper Reviews</MenuItem>
+          </NavDropdown>
+          <NavDropdown eventKey={7} title="Analysis" id="basic-nav-dropdown">
+            <MenuItem key={7.1}>Industry Analysis</MenuItem>
+            <MenuItem key={7.2}>Token Profiles</MenuItem>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

@@ -33,7 +33,7 @@ const partners = () => {
       </div>
       <Carousel autoplay>
         <div>
-          <Row gutter={16}>
+          <Row>
             <Col span={6} className="flexCenter">
               <div className="slider__image">
                 <img src={Airdropx} alt="Airdropx" />
@@ -57,90 +57,82 @@ const partners = () => {
           </Row>
         </div>
         <div>
-          <Row gutter={16}>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Gemini} alt="Gemini" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Cfs} alt="Cfs" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Cmg} alt="Cmg" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Cryptoc} alt="Cryptoc" />
-              </div>
-            </Col>
-          </Row>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Gemini} alt="Gemini" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Cfs} alt="Cfs" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Cmg} alt="Cmg" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Cryptoc} alt="Cryptoc" />
+            </div>
+          </Col>
         </div>
         <div>
-          <Row gutter={16}>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Cryptorated} alt="Cryptorated" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Etherlabs} alt="Etherlabs" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Icobench} alt="Icobench" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Icocrow} alt="Icocrow" />
-              </div>
-            </Col>
-          </Row>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Cryptorated} alt="Cryptorated" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Etherlabs} alt="Etherlabs" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Icobench} alt="Icobench" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Icocrow} alt="Icocrow" />
+            </div>
+          </Col>
         </div>
         <div>
-          <Row gutter={16}>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Ivey} alt="Ivey" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Kba} alt="Kba" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Pegasus} alt="Pegasus" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Roq} alt="Roq" />
-              </div>
-            </Col>
-          </Row>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Ivey} alt="Ivey" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Kba} alt="Kba" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Pegasus} alt="Pegasus" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Roq} alt="Roq" />
+            </div>
+          </Col>
         </div>
         <div>
-          <Row gutter={16}>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Stratx} alt="Stratx" />
-              </div>
-            </Col>
-            <Col span={6} className="flexCenter">
-              <div className="slider__image">
-                <img src={Tokeny} alt="Tokeny" />
-              </div>
-            </Col>
-          </Row>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Stratx} alt="Stratx" />
+            </div>
+          </Col>
+          <Col span={6} className="flexCenter">
+            <div className="slider__image">
+              <img src={Tokeny} alt="Tokeny" />
+            </div>
+          </Col>
         </div>
       </Carousel>
     </section>
