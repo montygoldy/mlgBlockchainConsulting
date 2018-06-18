@@ -4,6 +4,8 @@ Frontend developer test for mlg blockchain consulting
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Installing
+1.  Clone the repo.
+2.  "cd" inside the project folder.
+3.  "cd" inside the client folder.
+4.  Now run "npm install" in your terminal to install all the dependencies.
+5.  "npm start" to run server.
