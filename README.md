@@ -26,4 +26,4 @@ Custom landing page design for mlg consulting.
 
 ## Screenshots
 
-!["Screen shot for Home page"]()
+!["Screen shot for Home page"](https://github.com/montygoldy/mlgBlockchainConsulting/blob/master/doc/Screen%20Shot%202018-07-18%20at%206.28.48%20PM.png?raw=true)
